@@ -1,4 +1,6 @@
 #!/bin/bash
+# For this to w
+
 echo "RANDOM NUMBER GENERATOR"
 
 MATCH=`ls | grep $1 | wc -l`

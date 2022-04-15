@@ -15,10 +15,11 @@ read n6
 
 #store them in an array
 PICKS+=($n1 $n2 $n3 $n4 $n5 $n6)
-PICKS_str=`echo ${PICKS[*]}`
 
 #retrieve lottery results and unpack each number
-read -r r1 r2 r3 r4 r5 r6 <<< "${RESULT}"
+RESULT_temp=`cat output.$(date +%d.%m.%Y)`
+read -r r1 r2 r3 r4 r5 r6 <<< $RESULT_temp
+RESULT+=($r1 $r2 $r3 $r4 $r5 $r6)
 
 #loop over each number and count how many matches threre were
 
@@ -26,7 +27,7 @@ counter=0
 
 
 for i in {0..5}; do
-	if [ ${PICKS[i]} = ${RESULT[i]} ]; then
+	if [ "${PICKS[i]}" == "${RESULT[i]}" ]; then
 		let counter+=1
 	fi	
 done
@@ -39,5 +40,7 @@ else
 	echo "This is a bug"
 	exit 1
 fi
+
+rm output*
 
 exit 0

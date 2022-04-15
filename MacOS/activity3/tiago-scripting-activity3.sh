@@ -1,5 +1,9 @@
 #!/bin/sh
 
+echo " THE LOTTERY WILL BEGIN! "
+
+sleep 5
+
 declare -a PICKS=()
 
 for pick in {1..5};
@@ -8,4 +12,6 @@ done
 PICKS+=`echo $(( $RANDOM %10+1 ))`
 echo $PICKS > output.`date +%d.%m.%Y`
 
-exit 0.
+echo "THE RESULTS ARE IN! ${PICKS[*]}"
+echo "To Check your results, run the check.sh script"
+exit 0
