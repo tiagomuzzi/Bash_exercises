@@ -1,0 +1,8 @@
+MsgType,Side,Count
+ExecutionReport,Receiver,85
+Heartbeat,Sender,50
+Heartbeat,Receiver,50
+NewOrderSingle,Sender,26
+OrderCancelRequest,Sender,15
+Logon,Sender,1
+Logon,Receiver,1
