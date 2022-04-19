@@ -1,4 +1,6 @@
 #!/bin/bash
+# Generates testfiles, renames them with the current date and deletes them in the end.
+
 
 #Creates a few test files
 for i in {1..5}; do

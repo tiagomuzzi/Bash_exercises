@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#Takes the given array, reverses and prints out without any duplicates.
 
 declare -a ARRAY=(`cat array`)
 

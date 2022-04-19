@@ -1,4 +1,6 @@
 #!/bin/bash
+#Takes a list of numbers as input, then performs a series of arithmetic operations with list.
+
 
 for i in {1..5}; do
         echo "Choose a number ($i)"

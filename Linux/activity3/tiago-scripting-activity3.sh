@@ -1,4 +1,5 @@
 #!/bin/sh
+# Generates random results for a lottery simulation
 
 echo " THE LOTTERY WILL BEGIN! "
 
