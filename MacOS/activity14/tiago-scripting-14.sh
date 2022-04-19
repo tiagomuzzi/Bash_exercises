@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#A rough parser to csv. Pass a textfile as an argument and the script will return a word frequency csv.
+#A rough text parser to csv. Pass a textfile as an argument and the script will return a word frequency csv.
 
 
 cat $1 | sed -r 's/[^[:space:]a-zA-Z]//g' | #Remove anything that's not alphabet letters os whitespaces

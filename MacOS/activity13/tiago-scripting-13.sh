@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# A script that takes two files of unique numbers and displays the difference between the two lists 
+
 # Here follows two methods to achieve the same thing. To check performance I measured the time before and after the execution of each.
 # You may try it out for yourself by commenting in and out each method.
+
 
 ##Method 1 -- uncomment to test
 

@@ -1,4 +1,5 @@
 #!/bin/bash
+#Checks how many elements in common there are between two files (that must be passed as arguments to this script)
 
 declare -a ARRAY1=(`cat $1`)
 declare -a ARRAY2=(`cat $2`)

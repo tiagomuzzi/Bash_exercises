@@ -25,6 +25,7 @@ fi
 
 #run FixGenerator.sh
 chmod +x FixGen/fixGenerator.sh
+echo "Running fixgenerator.sh..."
 ./FixGen/fixGenerator.sh FixGen/logs
 echo "$TODAY: Fixgenerator Script ran successfully." >> tiago-scripting-15.log
 

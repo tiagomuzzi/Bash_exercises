@@ -1,8 +1,10 @@
 #!/bin/bash
 
-#I'm sure there's a better way to do this, but I failed to uncover it.
+# A Parser that makes a nice CSV out of the FIXlogs.
+# To run this on a mac you'll need the UNIX grep (brew install grep).
 
-#
+# I'm sure there's a better way to do this, but I failed to uncover it.
+
 declare -a Column1=()
 while read -r line; do
 
@@ -54,7 +56,7 @@ while read -r line; do
         echo "NULL" >> col9.txt
     fi;
 
-    if [[ $line =~ "17" ]]; then
+    if [[ $line =~ "17=" ]]; then
         echo $line | ggrep -Po '(?<=17=)[^;]*' >> col10.txt
     else
         echo "NULL" >> col10.txt
@@ -66,11 +68,11 @@ while read -r line; do
         echo "NULL" >> col11.txt
     fi;
 done < $1
-# done
 
-paste col*.txt | tr '\t' ' ' | sed -E 's/[ ]+/,/g' | sed -E 's/NULL/ /g' > temp.txt
+#put each column together, remove spaces, switch for comma and remove nulls.
+paste col*.txt | tr '\t' ' ' | sed -E 's/[ ]+/,/g' | sed -E 's/NULL//g' > temp.txt 
 
-echo -e Activity,Client,MSGType,Stock,Quantity,PriceSide,OuteriD,LastQtity,Execid,LastPrice | cat - temp.txt > parsed_$1.csv
+echo -e Client,MessageType,Stock,Quantity,Side,OrderiD,LastQuantity,Execid,LastPrice | cat - temp.txt > parsed_$1.csv
 
 rm col*.txt temp.txt
 

@@ -1,5 +1,6 @@
 #!/bin/bash
-# For this to w
+# For this to work you must pass a filename as the first argument and the number of lines you'd like to create second.
+#e.g. ./tiago-scripting-10 filetest.txt 15
 
 echo "RANDOM NUMBER GENERATOR"
 
