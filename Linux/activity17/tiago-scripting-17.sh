@@ -8,61 +8,61 @@
 while read -r line; do
 
     if [[ $line =~ "56=" ]]; then
-        echo $line | ggrep -Po '(?<=56=)[^;]*' >> col2.txt
+        echo $line | grep -Po '(?<=56=)[^;]*' >> col2.txt
     else
         echo "NULL" >> col2.txt
     fi;
 
     if [[ $line =~ "35=" ]]; then
-        echo $line | ggrep -Po '(?<=35=)[^;]*' >> col3.txt
+        echo $line | grep -Po '(?<=35=)[^;]*' >> col3.txt
     else
         echo "NULL" >> col3.txt
     fi;
 
     if [[ $line =~ "55=" ]]; then
-        echo $line | ggrep -Po '(?<=55=)[^;]*' >> col4.txt
+        echo $line | grep -Po '(?<=55=)[^;]*' >> col4.txt
     else
         echo "NULL" >> col4.txt
     fi;
 
     if [[ $line =~ "38=" ]]; then
-        echo $line | ggrep -Po '(?<=38=)[^;]*' >> col5.txt
+        echo $line | grep -Po '(?<=38=)[^;]*' >> col5.txt
     else
         echo "NULL" >> col5.txt
     fi;
 
     if [[ $line =~ "44=" ]]; then
-        echo $line | ggrep -Po '(?<=44=)[^;]*' >> col6.txt
+        echo $line | grep -Po '(?<=44=)[^;]*' >> col6.txt
     else
         echo "NULL" >> col6.txt
     fi;
 
     if [[ $line =~ "54=" ]]; then
-        echo $line | ggrep -Po '(?<=54=)[^;]*' >> col7.txt
+        echo $line | grep -Po '(?<=54=)[^;]*' >> col7.txt
     else
         echo "NULL" >> col7.txt
     fi;
 
     if [[ $line =~ "11=" ]]; then
-        echo $line | ggrep -Po '(?<=11=)[^;]*' >> col8.txt
+        echo $line | grep -Po '(?<=11=)[^;]*' >> col8.txt
     else
         echo "NULL" >> col8.txt
     fi;
 
     if [[ $line =~ "32=" ]]; then
-        echo $line | ggrep -Po '(?<=32=)[^;]*' >> col9.txt
+        echo $line | grep -Po '(?<=32=)[^;]*' >> col9.txt
     else
         echo "NULL" >> col9.txt
     fi;
 
     if [[ $line =~ "17=" ]]; then
-        echo $line | ggrep -Po '(?<=17=)[^;]*' >> col10.txt
+        echo $line | grep -Po '(?<=17=)[^;]*' >> col10.txt
     else
         echo "NULL" >> col10.txt
     fi;
 
     if [[ $line =~ "31=" ]]; then
-        echo $line | ggrep -Po '(?<=31=)[^;]*' >> col11.txt
+        echo $line | grep -Po '(?<=31=)[^;]*' >> col11.txt
     else
         echo "NULL" >> col11.txt
     fi;

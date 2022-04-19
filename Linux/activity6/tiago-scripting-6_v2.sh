@@ -1,5 +1,5 @@
 #!/bin/sh
-#Version 2
+#Version 2 - Takes two number and gives you the difference.
 
 echo "Enter a number"
 read NUM

@@ -1,4 +1,6 @@
 #!/bin/bash
+#Checks user input agains the lottery result
+
 #Ask user for their numbers
 echo "what was your first number?"
 read n1

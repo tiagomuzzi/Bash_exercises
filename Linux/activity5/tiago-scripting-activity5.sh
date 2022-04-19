@@ -1,4 +1,6 @@
 #!/bin/sh
+#This script will Invert any inputted number
+
 
 echo "insert number"
 read NUM

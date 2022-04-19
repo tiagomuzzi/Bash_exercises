@@ -12,7 +12,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break
+	echo "not an input"
+	exit 1
 fi
 
 echo "Statement 2: Bats Feed their babies on milk"
@@ -24,7 +25,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break
+	echo "not an input"
+	exit 1
 fi
 
 
@@ -37,7 +39,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break
+	echo "not an input"
+	exit 1
 fi
 
 
@@ -50,7 +53,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break
+	echo "not an input"
+	exit 1
 fi
 
 
@@ -63,7 +67,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break
+	echo "not an input"
+	exit 1
 fi
 
 
@@ -76,7 +81,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break
+	echo "not an input"
+	exit 1
 fi
 
 
@@ -89,7 +95,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break	
+	echo "not an input"
+	exit 1	
 fi
 
 
@@ -102,7 +109,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break
+	echo "not an input"
+	exit 1
 fi
 
 
@@ -115,7 +123,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break
+	echo "not an input"
+	exit 1
 fi
 
 
@@ -128,7 +137,8 @@ if [[ $ans = "T" ]]; then
 elif	[[ $ans = "F" ]]; then
 	echo "Wrong Answer"
 else
-	break
+	echo "not an input"
+	exit 1
 fi
 
 echo "your result is: `echo $count`"

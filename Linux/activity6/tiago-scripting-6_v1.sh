@@ -1,5 +1,5 @@
 #!/bin/sh
-#Version 1
+#Version 1 - Compares two numbers and tells you which is greater.
 
 echo "Enter a number"
 read NUM
