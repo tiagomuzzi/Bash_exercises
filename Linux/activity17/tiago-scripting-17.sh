@@ -5,7 +5,6 @@
 
 # I'm sure there's a better way to do this, but I failed to uncover it.
 
-declare -a Column1=()
 while read -r line; do
 
     if [[ $line =~ "56=" ]]; then
